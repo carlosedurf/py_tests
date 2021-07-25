@@ -12,6 +12,21 @@ class Peaple:
 
             (data_obtained is True if data obtained with success)
 """
+try:
+    import sys
+    import os
+
+    sys.path.append(
+        os.path.abspath(
+            os.path.join(
+                os.path.dirname(__file__),
+                '../src'
+            )
+        )
+    )
+except:
+    raise
+
 import unittest
 from unittest.mock import patch
 from Peaple import Peaple

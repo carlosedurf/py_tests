@@ -10,6 +10,21 @@ Part 2 -> Create the see test sucess
 Refactor
 Part 3 -> Improve the code
 """
+try:
+    import sys
+    import os
+
+    sys.path.append(
+        os.path.abspath(
+            os.path.join(
+                os.path.dirname(__file__),
+                '../src'
+            )
+        )
+    )
+except:
+    raise
+
 import unittest
 from baconwithegges import bacon_with_egges
 
